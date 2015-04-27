@@ -1,0 +1,18 @@
+/*!
+ * Written by Michael Heple Web Design
+ * Visit us at michaelheple.com
+ */
+
+body {
+    font-family: 'Puritan', sans-serif;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+}
+.navbar-brand {
+    padding: 10px 15px;  
+}
+#brand{
+    max-width: 343.5px;
+}
