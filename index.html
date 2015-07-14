@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
       
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Puritan|Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One|Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -29,8 +29,8 @@
   <body>
     
     <header>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
@@ -40,43 +40,40 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html" id="brand-container">
-                <div class="align-this">
                   <span class="sr-only">Michael Heple Web Design</span>
-                  <img src="images/logo.png" alt="Michael Heple Design Logo" title="logo" id="brand">
-                </div>
               </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
+              <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right" id="socialtop">
+                  <li><a href="http://www.facebook.com/michaelhepledesign" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
+                  <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                  <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a></li>
                 </li>
               </ul>
             </div><!-- /.navbar-collapse -->
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right" id="socialtop">
-                    <li><a href="http://www.facebook.com/michaelhepledesign" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
-                    </li>
-                </ul>
-            </div>
           </div><!-- /.container-fluid -->
         </nav>
     </header>
-    <section>
-    
+    <section class="container">
+        <div class="banner">
+            <img src="images/bannerimage.jpg" alt="banner image">
+        </div>
+        <!-- BEGIN PAGE CONTENT -->
+        <div class="page-content">
+            <div id="greeting">
+            <h2>Hey there! Thanks for stopping by.</h2>
+            <p>I help artists establish an online presence, and provide them with the tools to succeed in their digital space.</p>
+            </div>
+        </div>
     </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
