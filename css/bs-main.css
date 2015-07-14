@@ -9,19 +9,101 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4, h5 { 
+h1, h2, h3 { 
     font-family: 'Patua One', cursive;
     color: #3f435e;
     text-transform:uppercase;
 }
 
-#greeting { 
-    margin-top: 100px; 
+h3:before {
+    content: '\003c';
+}
+
+.active a:before {
+    content: '\003c \00a0';
+}
+
+h3:after, .active a:after {
+    content: '\003e';
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform:uppercase;
+}
+
+hr {
+    border-top: 1px solid #575757;
+}
+
+.nav {
+    font-family: 'Patua One', cursive;
+    color: #3f435e;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #9a464c;
+}
+
+#socialtop {
+    font-size:20px;
+}
+
+.banner {
+    margin-left: -15px;
+}
+
+.page-content {
     text-align: center;
 }
 
-#greeting p {
-    padding: 30px 0 40px 0;
+#greeting, .home-section { 
+    margin-top: 75px;
+}
+
+.home-section p, .home-section .row{
+    margin: 40px 0 50px 0;
     font-weight: 300;
-    font-size: 20px; 
+    font-size: 14px; 
+}
+#greeting p {
+    text-transform:uppercase;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #e7e7e7;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 18px;
+    text-transform:uppercase;
+}
+
+footer h3:before, footer h3:after {
+    content: none;
+}
+
+footer h3, footer a {color: #333;}
+
+footer p {padding-top:5px;}
+
+#socialbottom {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+#socialbottom li {
+    display:inline;
+    font-size: 36px;
+    padding: 0 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    
+    .page-content {
+        padding: 0 105px;
+    }
+    
 }
