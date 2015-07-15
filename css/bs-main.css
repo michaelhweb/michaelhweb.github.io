@@ -55,6 +55,10 @@ hr {
     margin-left: -15px;
 }
 
+.banner img {
+    width:100%;
+}
+
 .page-content {
     text-align: center;
 }
@@ -63,7 +67,7 @@ hr {
     margin-top: 75px;
 }
 
-.home-section p, .home-section .row{
+.home-section>p, .home-section .row{
     margin: 40px 0 50px 0;
     font-weight: 300;
     font-size: 14px; 
@@ -71,6 +75,11 @@ hr {
 #greeting p {
     text-transform:uppercase;
     font-size: 20px;
+}
+
+.skill-item span.fa {
+    padding: 10px 0 20px 0;
+    color: #9a464c;
 }
 
 footer {
