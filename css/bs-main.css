@@ -11,10 +11,14 @@ body {
     color: #333;
 }
 
-h1, h2, h3 { 
+h1, h2, h3, .contact-email { 
     font-family: 'Patua One', cursive;
     color: #3f435e;
     text-transform:uppercase;
+}
+
+h2 {
+    margin-bottom: 30px;
 }
 
 h3:before {
@@ -59,11 +63,11 @@ hr {
     text-align: center;
 }
 
-#greeting, .home-section { 
-    margin-top: 75px;
+#greeting, .home-section, .page-section { 
+    margin: 75px 0 50px 0;
 }
 
-.home-section>p, .home-section .row{
+.home-section>p, .home-section .row, .page-section>p{
     margin: 40px 0 50px 0;
     font-weight: 300;
     font-size: 14px; 
@@ -95,15 +99,22 @@ footer h3, footer a {color: #333;}
 footer p {padding-top:5px;}
 
 #socialbottom {
-    list-style: none;
-    padding: 0;
     margin-top: 50px;
 }
 
-#socialbottom li {
+#socialbottom, #contactsocial {
+    list-style: none;
+    padding: 0;
+}
+
+#socialbottom li, #contactsocial li {
     display:inline;
     font-size: 36px;
     padding: 0 10px;
+}
+
+#contactsocial a, .contact-email{
+    color: #9a464c;
 }
 
 .about-img {
@@ -126,6 +137,10 @@ footer p {padding-top:5px;}
 .portfolio-item img:hover {
     opacity: 1;
     filter: alpha(opacity=40);
+}
+
+.resource-item {
+    padding: 25px 0;
 }
 
 /* Media Queries */
