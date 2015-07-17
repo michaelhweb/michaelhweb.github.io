@@ -111,6 +111,23 @@ footer p {padding-top:5px;}
     width: 200px;
 }
 
+.portfolio-item {
+    margin-bottom:20px;
+}
+
+.portfolio-item h4 {
+    min-height: 38px;
+}
+.portfolio-item img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.portfolio-item img:hover {
+    opacity: 1;
+    filter: alpha(opacity=40);
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     
