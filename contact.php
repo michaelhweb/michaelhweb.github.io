@@ -4,9 +4,13 @@
 		$email = $_POST['email'];
 		$message = $_POST['message'];
 		$human = intval($_POST['human']);
-		$from = 'Demo Contact Form'; 
+		$from = 'MichaelHeple.com Contact Form'; 
 		$to = 'info@michaelheple.com'; 
-		$subject = 'Message from Contact Demo ';
+		$subject = 'Message from Contact Form ';
+        $errName ='';
+        $errEmail ='';
+        $errMessage ='';
+        $errHuman ='';
 		
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
 		// Check if name has been entered
@@ -50,16 +54,17 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <meta name="robots" content="">
     <meta name="description" content="Michael Heple Web Design is a Sacramento based web development company focused on building relationships with small businesses">
     
-    <link rel="canonical" href="http://michaelheple.com/contact/" >
-    <link rel="author" href="http://michaelheple.com/" >
+    <link rel="canonical" href="http://michaelheple.com/contact.php" >
+    <link rel="author" href="http://michaelheple.com" >
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     
     <!-- Open Graph -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="company">
     <meta property="og:title" content="Michael Heple Web Design Services">
     <meta property="og:description" content="Sacramento based Web Design focused on the Artist and Small Business. I would love to talk to you about your home on the interent.">
-    <meta property="og:url" content="http://michaelheple.com/">
-    <meta property="og:image" content="http://michaelhweb.github.io/images/fbimage.jpg">
+    <meta property="og:url" content="http://michaelheple.com">
+    <meta property="og:image" content="http://michaelheple.com/images/fbimage.jpg">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -101,10 +106,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="active"><a href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
+                <li><a href="http://development.michaelheple.com">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li class="active"><a href="contact.php">Contact<span class="sr-only">(current)</span></a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right hidden-xs" id="socialtop">
                   <li><a href="http://www.facebook.com/michaelhepledesign" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
@@ -123,10 +128,16 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
         <div class="page-content">
             <div class="page-section">
                 <h2>Let's Connect</h2>
-                <p>If you have questions about your website, or you just want some information on where to get started, shoot me a message using the form below or send me an email at
+                <p>If you have questions about your website, or you just want some information on where to get started, shoot me a message using the form below. You can also send me an email at
                     <a class="contact-email" href="mailto:info@michaelheple.com">
                         info@michaelheple.com
                     </a>
+                    or on these social medias:
+                    <ul class="" id="contactsocial">
+                        <li><a href="http://www.facebook.com/michaelhepledesign" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
+                        <li><a href="https://twitter.com/heple_m" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="https://github.com/michaelhweb" target="_blank"><span class="fa fa-github-square"></span></a></li>
+                    </ul>
                 </p>
             </div>
             <div class="page-section">
@@ -174,15 +185,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                         </form>
                     </div>
                 </div>
-            </div>
-            <div class="page-section">
-                <p>You can also connect with me on these social medias.
-                    <ul class="" id="contactsocial">
-                        <li><a href="http://www.facebook.com/michaelhepledesign" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
-                        <li><a href="https://twitter.com/heple_m" target="_blank"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="https://github.com/michaelhweb" target="_blank"><span class="fa fa-github-square"></span></a></li>
-                    </ul>
-                </p>
             </div>
         </div> <!-- End Page Content -->
     </section>
