@@ -1,5 +1,11 @@
 <?php
-	if (isset($_POST["submit"])) {
+    
+    $errName ='';
+    $errEmail ='';
+    $errMessage ='';
+    $errHuman ='';
+    $result ='';
+    if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$message = $_POST['message'];
@@ -7,10 +13,6 @@
 		$from = 'MichaelHeple.com Contact Form'; 
 		$to = 'info@michaelheple.com'; 
 		$subject = 'Message from Contact Form ';
-        $errName ='';
-        $errEmail ='';
-        $errMessage ='';
-        $errHuman ='';
 		
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
 		// Check if name has been entered
@@ -49,10 +51,9 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Michael Heple Web Design</title>
+    <title>Michael Heple Web Design | Contact Me</title>
     
-    <meta name="robots" content="">
-    <meta name="description" content="Michael Heple Web Design is a Sacramento based web development company focused on building relationships with small businesses">
+    <meta name="description" content="Contact Michael Heple Web Design about your website">
     
     <link rel="canonical" href="http://michaelheple.com/contact.php" >
     <link rel="author" href="http://michaelheple.com" >
@@ -106,7 +107,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-left">
-                <li><a href="http://development.michaelheple.com">Home</a></li>
+                <li><a href="http://michaelheple.com">Home</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="portfolio">Portfolio</a></li>
                 <li class="active"><a href="contact.php">Contact<span class="sr-only">(current)</span></a></li>
@@ -147,21 +148,21 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                             <div class="form-group">
                                 <label for="name" class="col-sm-2 control-label">Name</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php if (isset($_POST["submit"])) {echo htmlspecialchars($_POST['name']); }?>">
                                     <?php echo "<p class='text-danger'>$errName</p>";?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="col-sm-2 control-label">Email</label>
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']);  ?>">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php if (isset($_POST["submit"])) {echo htmlspecialchars($_POST['email']); } ?>">
                                     <?php echo "<p class='text-danger'>$errEmail</p>";?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="message" class="col-sm-2 control-label">Message</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                                    <textarea class="form-control" rows="4" name="message"><?php if (isset($_POST["submit"])) {echo htmlspecialchars($_POST['message']);}?></textarea>
                                     <?php echo "<p class='text-danger'>$errMessage</p>";?>
                                 </div>
                             </div>
