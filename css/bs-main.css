@@ -67,7 +67,7 @@ hr {
     margin: 75px 0 50px 0;
 }
 
-.home-section>p, .home-section .row, .page-section>p{
+.home-section>p, .page-section>p{
     margin: 40px 0 50px 0;
     font-weight: 300;
     font-size: 14px; 
@@ -82,7 +82,7 @@ hr {
     color: #9a464c;
 }
 
-footer {
+footer.page-footer {
     background-color: #e7e7e7;
     text-align: center;
     padding: 50px 0;
@@ -90,7 +90,7 @@ footer {
     text-transform:uppercase;
 }
 
-footer h3:before, footer h3:after {
+footer.page-footer h3:before, footer h3:after {
     content: none;
 }
 
@@ -143,11 +143,23 @@ footer p {padding-top:5px;}
     padding: 25px 0;
 }
 
+.contact-form {
+    text-align: left;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     
     .page-content {
         padding: 0 105px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    
+    .home-section .row {
+        margin: 40px 0 50px 0;
     }
     
 }
